@@ -49,8 +49,7 @@ function Home() {
               className="btn btn-ghost"
             >
               {brand.logo ? (
-                <img src={`http://localhost:8000${brand.logo}`}
-                  style={{ height: '20px', objectFit: 'contain' }} />
+                <img src={brand.logo} style={{ height: '20px', objectFit: 'contain' }} />
               ) : null}
               {brand.name}
               <span className="badge badge-info">{brand.cars_count}</span>
